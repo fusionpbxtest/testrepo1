@@ -108,3 +108,7 @@ Writing objects: 100% (3/3), 772 bytes | 772.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/TekMason/testrepo1.git
    500d9a4..02aff49  master -> master
+
+test line endings
+another
+and one more
