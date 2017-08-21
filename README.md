@@ -43,4 +43,70 @@ $ ls
 README.md
 
  open README.md, make edits and save
- 
+
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git add .
+
+$ git commit -m "Edit 3"
+[master 02aff49] Edit 3
+ 1 file changed, 42 insertions(+)
+
+BACKTRACK
+$ git remote -v
+origin  https://github.com/TekMason/testrepo1.git (fetch)
+origin  https://github.com/TekMason/testrepo1.git (push)
+
+$ git remote add upstream https://github.com/fusionpbxtest/testrepo1.git
+
+$ git remote -v
+origin  https://github.com/TekMason/testrepo1.git (fetch)
+origin  https://github.com/TekMason/testrepo1.git (push)
+upstream        https://github.com/fusionpbxtest/testrepo1.git (fetch)
+upstream        https://github.com/fusionpbxtest/testrepo1.git (push)
+
+$ git fetch upstream
+From https://github.com/fusionpbxtest/testrepo1
+ * [new branch]      master     -> upstream/master
+
+$ git branch -va
+* master                  02aff49 [ahead 1] Edit 3
+  remotes/origin/HEAD     -> origin/master
+  remotes/origin/master   500d9a4 Merge pull request #1 from TekMason/patch-1
+  remotes/upstream/master 500d9a4 Merge pull request #1 from TekMason/patch-1
+
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+$ git merge upstream/master
+Already up-to-date.
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 772 bytes | 772.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/TekMason/testrepo1.git
+   500d9a4..02aff49  master -> master
+
+
