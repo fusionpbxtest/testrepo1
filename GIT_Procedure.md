@@ -23,8 +23,38 @@ $ git branch -va
 $ git checkout master
 $ git merge upstream/master
 
- edit files
+...
+
+EDIT FILES
 $ git status
 $ git add .
 $ git commit -m "Commit Message Here"
 $ git push
+
+Go to GitHub repo and should see changes
+Do a pull request
+
+...
+
+time goes by...
+
+SYNCHRONIZE FROM SOURCE REPO
+
+# Fetch from upstream remote
+$ git fetch upstream
+
+# View all branches, including those from upstream
+git branch -va
+
+# Checkout your master branch and merge upstream
+git checkout master
+git merge upstream/master
+
+git push
+
+....
+good to go with new edits (EDIT FILES)
+
+
+
+
