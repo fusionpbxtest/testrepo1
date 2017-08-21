@@ -55,6 +55,12 @@ git push
 ....
 good to go with new edits (EDIT FILES)
 
+On original select what?
+Merge your pull request
+Squash and merge
+Rebase and Merge
+
+
 
 
 
