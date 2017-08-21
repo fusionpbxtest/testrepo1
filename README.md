@@ -143,6 +143,8 @@ branch.master.remote=origin
 branch.master.merge=refs/heads/master
 remote.upstream.url=https://github.com/fusionpbxtest/testrepo1.git
 remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
-hello world.
-hello again.
+
+Tried this:
+git config --global core.autocrlf true
+djklldjk
 
