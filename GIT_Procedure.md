@@ -60,8 +60,3 @@ Merge your pull request (1 edit gave 2 commits)
 Squash and merge
 Rebase and Merge
 
-
-
-
-
-
