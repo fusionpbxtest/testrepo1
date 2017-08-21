@@ -146,5 +146,8 @@ remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
 
 Tried this:
 git config --global core.autocrlf true
-djklldjk
+DOES NOT Workflow
+Tried:
+git config --global core.autocrlf false
+
 
