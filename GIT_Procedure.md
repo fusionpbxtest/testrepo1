@@ -56,7 +56,7 @@ git push
 good to go with new edits (EDIT FILES)
 
 On original select what?
-Merge your pull request
+Merge your pull request (1 edit gave 2 commits)
 Squash and merge
 Rebase and Merge
 
